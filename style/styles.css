@@ -1,0 +1,135 @@
+/* --- Thiết lập chung --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Giúp việc định dạng layout dễ dàng hơn */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7; /* Màu nền xám rất nhạt */
+    color: #343a40; /* Màu chữ tối */
+}
+
+/* --- Bố cục chính --- */
+.container {
+    width: 90%;
+    max-width: 960px; /* Chiều rộng tối đa cho màn hình lớn */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* --- Header --- */
+header {
+    background: #093aad;
+    padding: 20px 0;
+    border-bottom: 1px solid #dee2e6; /* Đường viền mỏng */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #01060c;
+}
+
+/* --- Thanh điều hướng --- */
+nav {
+    background: #343a40; /* Màu nền tối cho menu */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển động mượt */
+}
+
+nav a:hover {
+    background-color: #495057; /* Màu nền khi di chuột qua */
+}
+
+/* --- Nội dung chính --- */
+main {
+    padding: 20px 0;
+    min-height: 400px;
+    font-size: 20px;
+}
+
+
+
+/* --- Định dạng cho từng mục câu hỏi --- */
+.question-item {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Thêm bóng đổ nhẹ */
+}
+
+.question-item h3 {
+    margin-top: 0;
+}
+
+.question-item h3 a {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.question-item small {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: #343a40;
+    color: #ffffff;
+}
+.btn-back, .btn-delete {
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+.btn-back {
+    background-color: #007bff;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #a71d2a;
+    transform: scale(1.05);
+}
